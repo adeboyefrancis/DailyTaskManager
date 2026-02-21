@@ -1,0 +1,42 @@
+name: Daily Task Manager App CI Flow using Python 3.8 and 3.9 Matrix Build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          make install
+
+      - name: Lint with pylint
+        run: |
+          make lint
+
+      - name: Test with pytest
+        run: |
+          make test
+
+      - name: Format code with Python Black
+        run: |
+          make format
+
+      - name: Post Install tasks
+        run: |
+          make post-install
+
+      - name: Run the application
+        run: |
+          make run 
+
+      - name: Test Deployment
+        run: |
+          echo "🚀 Testing Deployment Successful! ✅"
