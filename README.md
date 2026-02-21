@@ -1,3 +1,5 @@
+[![Daily Task Manager App CI Flow using Python 3.8 and 3.9 Matrix Build](https://github.com/adeboyefrancis/DailyTaskManager/actions/workflows/ci-flow.yml/badge.svg)](https://github.com/adeboyefrancis/DailyTaskManager/actions/workflows/ci-flow.yml)
+
 ### Develop -> Automate -> Continuous Improvement
 
 <img width="3124" height="1018" alt="image" src="https://github.com/user-attachments/assets/1cde5695-d36c-4966-bf00-2bd2564f43ee" />
@@ -11,4 +13,5 @@
 * python library
 * Dockerfile
 * Microservice (FastAPI)
+
 * CLI Tool
