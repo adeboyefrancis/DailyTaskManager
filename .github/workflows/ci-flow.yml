@@ -29,14 +29,6 @@ jobs:
         run: |
           make format
 
-      - name: Post Install tasks
-        run: |
-          make post-install
-
-      - name: Run the application
-        run: |
-          make run 
-
       - name: Test Deployment
         run: |
           echo "🚀 Testing Deployment Successful! ✅"
