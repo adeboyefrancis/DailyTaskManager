@@ -31,6 +31,7 @@ app.add_middleware(
 # Constants
 DATA_FILE = "tasks.json"
 
+
 # Enums
 class TaskStatus(str, Enum):
     PENDING = "pending"
@@ -185,6 +186,7 @@ class TaskManager:
 
 # Initialize task manager
 task_manager = TaskManager()
+
 
 # Routes
 @app.get("/", tags=["Root"])

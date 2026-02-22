@@ -1,0 +1,14 @@
+# .dockerignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+backend/tests/
+notebooks/
+*.ipynb
+.env
+.git
+.gitignore
+.vscode
+*.log
+frontend/node_modules/
